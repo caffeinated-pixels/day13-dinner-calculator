@@ -72,6 +72,7 @@ input {
 .result {
   color: var(--wine-red);
   width: 270px;
+  min-height: 170px;
   overflow-y: auto;
   overflow-x: hidden;
   background: var(--snow);
