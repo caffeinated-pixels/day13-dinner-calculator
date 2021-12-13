@@ -8,12 +8,25 @@ btn.addEventListener('click', calculateDinner)
 
 function calculateDinner(e) {
   e.preventDefault()
+
   if (vegetarian.checked) {
-    food.textContent = 'nut roast'
-  } else if (numInput.value < 5) {
-    food.textContent = 'turkey'
-  } else {
-    food.textContent = 'goose'
+    if (numInput.value < 5) {
+      food.textContent = 'nut roast'
+    } else if (numInput.value < 10) {
+      food.textContent = 'a really big nut roast'
+    } else {
+      food.textContent = 'going to a restaurant with a good veggie option!'
+    }
+  }
+
+  if (!vegetarian.checked) {
+    if (numInput.value < 5) {
+      food.textContent = 'turkey'
+    } else if (numInput.value < 10) {
+      food.textContent = 'goose'
+    } else {
+      food.textContent = 'going to a restaurant'
+    }
   }
 }
 
