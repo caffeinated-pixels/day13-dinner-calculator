@@ -71,9 +71,8 @@ input {
 
 .result {
   color: var(--wine-red);
-  min-width: 270px;
-  max-width: 5ch;
-  overflow-y: scroll;
+  width: 270px;
+  overflow-y: auto;
   overflow-x: hidden;
   background: var(--snow);
   padding: 1em;
